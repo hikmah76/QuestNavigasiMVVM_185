@@ -110,7 +110,7 @@ fun FormulirView(modifier: Modifier = Modifier,
                 .padding(5.dp),
             label = {Text("Nomor Handphone")},
             placeholder = {Text("Masukkan Nomor Handphone Anda")},
-            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number) //Menmbahkan NoHP
         )
 
         TextField (
