@@ -40,7 +40,7 @@ fun FormulirView(modifier: Modifier = Modifier,
     var email by remember { mutableStateOf("") }
     var noHp by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
-    var gender by remember { mutableStateOf("") }
+    var gender by remember { mutableStateOf("") } //menyimpan data input
 
     var listdata : MutableList<String> = mutableListOf(nama, gender, alamat, noHp, email, nim)
 
@@ -125,7 +125,7 @@ fun FormulirView(modifier: Modifier = Modifier,
 
         Button(onClick = {
             onClickButton(listdata)
-        }, modifier = Modifier.padding(vertical = 10.dp)
+        }, modifier = Modifier.padding(vertical = 10.dp) //Fungsi dijalankan ketika tombol ditekan
         )
 
         {
