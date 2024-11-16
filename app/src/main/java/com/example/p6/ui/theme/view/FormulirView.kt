@@ -79,13 +79,13 @@ fun FormulirView(modifier: Modifier = Modifier,
         )
 
         Row (
-            modifier = Modifier.fillMaxWidth()) {       //Mengganti variabel modifier dengan Modifier
+            modifier = Modifier.fillMaxWidth()) {
             pilihanJK.forEach(){ selectedGender ->
                 Row (verticalAlignment = Alignment.CenterVertically) {
                     RadioButton(
                         selected = gender == selectedGender,
                         onClick = {
-                            gender = selectedGender
+                            gender = selectedGender//Mengganti variabel modifier dengan Modifier
                         })
                 }
                 Text(text = selectedGender) }
